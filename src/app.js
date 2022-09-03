@@ -16,16 +16,6 @@ const port = process.env.PORT || 3000;
 const templates_path = path.join(__dirname, "../templates/views");
 const partials_path = path.join(__dirname, "../templates/partials");
 
-// app.engine(
-//   ".hbs",
-//   exphbs.engine({
-//     extname: ".hbs",
-//     defaultLayout: false,
-//     layoutsDir: "views/",
-//   })
-// );
-// app.set("view engine", ".hbs");
-
 //Thse two needed for live website
 app.use(express.json()); // just for postman
 app.use(express.urlencoded({ extended: false }));

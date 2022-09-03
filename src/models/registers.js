@@ -8,7 +8,7 @@ const registerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  address: {
+  age: {
     type: String,
     required: true,
   },
@@ -16,16 +16,11 @@ const registerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  course: {
+  email: {
     type: String,
     required: true,
-  },
-  emailId: {
-    type: String,
-    required: true,
-    unique: true,
   },
 });
-const Register = new mongoose.model("Register", registerSchema);
+const Register = new mongoose.model("Register", registerSchema); //model name must be singular and collection will be plural
 
 module.exports = Register;

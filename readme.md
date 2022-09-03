@@ -4,3 +4,5 @@ app.use(express.json()); // just for postman
 app.use(express.urlencoded({ extended: false }));
 
 Learned from https://www.youtube.com/watch?v=XZiFBlfluZk
+
+To learn more about handlebars, go here : https://stackabuse.com/guide-to-handlebars-templating-engine-for-node/
